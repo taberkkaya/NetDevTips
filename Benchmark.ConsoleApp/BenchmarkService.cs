@@ -8,7 +8,7 @@ namespace Benchmark.ConsoleApp;
 public class BenchmarkService
 {
     [ShortRunJob, Config(typeof(Config))]
-    private class Config: ManualConfig
+    private class Config : ManualConfig
     {
         public Config()
         {
@@ -16,6 +16,20 @@ public class BenchmarkService
         }
     }
 
+
+    //[Benchmark(Baseline = true)]
+    //public void GetAll()
+    //{
+    //    AppDbContext context = new();
+    //    context.Products.ToList();
+    //}
+
+    //[Benchmark]
+    //public void GetAllSqlRaw()
+    //{
+    //    AppDbContext context = new();
+    //    context.Products.FromSqlRaw("Select * From Products").ToList();
+    //}
 
     [Benchmark(Baseline = true)]
     public void GetAll()
@@ -25,9 +39,9 @@ public class BenchmarkService
     }
 
     [Benchmark]
-    public void GetAllSqlRaw()
+    public async Task GetAllAsync()
     {
         AppDbContext context = new();
-        context.Products.FromSqlRaw("Select * From Products").ToList();
+        await context.Products.ToListAsync();
     }
 }

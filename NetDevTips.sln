@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsNoTracking", "AsNoTrackin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleOrUnique", "SingleOrUnique\SingleOrUnique.csproj", "{CBCE4329-50B1-4E51-A3F5-A14A89A92684}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagination", "Pagination\Pagination.csproj", "{AA4BEA10-A3CA-44B3-A602-73BCA724ABBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asenkron", "Asenkron\Asenkron.csproj", "{61776B70-53BE-4885-A0E2-48AAD968B48F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{CBCE4329-50B1-4E51-A3F5-A14A89A92684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBCE4329-50B1-4E51-A3F5-A14A89A92684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBCE4329-50B1-4E51-A3F5-A14A89A92684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA4BEA10-A3CA-44B3-A602-73BCA724ABBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA4BEA10-A3CA-44B3-A602-73BCA724ABBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA4BEA10-A3CA-44B3-A602-73BCA724ABBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA4BEA10-A3CA-44B3-A602-73BCA724ABBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61776B70-53BE-4885-A0E2-48AAD968B48F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61776B70-53BE-4885-A0E2-48AAD968B48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61776B70-53BE-4885-A0E2-48AAD968B48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61776B70-53BE-4885-A0E2-48AAD968B48F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
