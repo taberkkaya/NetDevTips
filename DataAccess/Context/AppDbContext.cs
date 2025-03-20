@@ -1,6 +1,5 @@
 ﻿using DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
 
 namespace DataAccess.Context;
 
@@ -15,6 +14,8 @@ public sealed class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Product>().HasIndex(e => e.Name).IsUnique();
+        modelBuilder.Entity<Product>()
+            .HasIndex(e => e.Name)
+            .IsUnique();
     }
 }
