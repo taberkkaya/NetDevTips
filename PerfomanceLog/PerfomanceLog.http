@@ -1,0 +1,6 @@
+@PerfomanceLog_HostAddress = http://localhost:5201
+
+GET {{PerfomanceLog_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

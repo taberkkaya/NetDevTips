@@ -25,8 +25,8 @@ public class ValuesController : ControllerBase
     public IActionResult LoginWithRecord(Login login)
     {
         Login login2 = new("taberkkaya@gmail.com", "1" , true);
-        loginDto.Email = string.Empty;
-        loginDto2.Email = string.Empty;
+        //loginDto.Email = string.Empty;
+        //loginDto2.Email = string.Empty;
         return Ok("Giriş başarılı.");
     }
 }
