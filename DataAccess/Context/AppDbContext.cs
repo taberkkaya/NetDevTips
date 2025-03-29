@@ -13,6 +13,7 @@ public sealed class AppDbContext : DbContext
     public DbSet<Product> Products { get; set; }
     public DbSet<ErrorLog> ErrorLoggers { get; set; }
     public DbSet<PerfomanceLog> PerfomanceLogs { get; set; }
+    public DbSet<Category> Categories { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Product>()
